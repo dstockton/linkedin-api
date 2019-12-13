@@ -98,6 +98,7 @@ class Linkedin(object):
         data = res.json()
 
         new_elements = []
+        print(data)
         for i in range(len(data["data"]["elements"])):
             new_elements.extend(data["data"]["elements"][i]["elements"])
             # not entirely sure what extendedElements generally refers to - keyword search gives back a single job?
